@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -114,6 +116,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item" data-images="./img/3d_modelling/t-top.png,./img/3d_modelling/dopper.png"> <!-- Add data-images attribute -->
                         <img src="./img/3d_modelling/t-top.png" alt="3D Perfume Bottle" class="img-fluid">
+                        <div class="portfolio-overlay">Click to see more</div>
                         <div class="p-3 bg-white">
                             <h5>Supplement Bottle (Blender)</h5>
                             <p class="mb-2">Photorealistic 3D render for e-commerce</p>
@@ -127,8 +130,8 @@
                           <img src="" alt="Portfolio Image" class="popup-image">
                             <button class="popup-close-btn">&times;</button>
                             <div class="image-navigation">
-                            <button class="nav-btn prev-btn">&lt;</button>
-                            <button class="nav-btn next-btn">&gt;</button>
+                            <button class="nav-btn prev-btn"><i class="bi bi-caret-left-fill"></i></button>
+                            <button class="nav-btn next-btn"><i class="bi bi-caret-right-fill"></i></button>
                      </div>
                 </div>
                 </div>
@@ -137,8 +140,9 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item" data-images="./img/print_ready/craft bear label.png">
                         <img src="./img/print_ready/craft bear label.png" alt="Craft Wine Label" class="img-fluid">
+                        <div class="portfolio-overlay">Click to see more</div>
                         <div class="p-3 bg-white">
-                            <h5>Craft Label (Print-Ready)</h5>
+                            <h5>Craft Wine Label (Print-Ready)</h5>
                             <p class="mb-2">CMYK + Pantone for production</p>
                             <span class="badge bg-primary">Label Design</span>
                         </div>
@@ -148,6 +152,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item" data-images="./img/retail_box_packaging/dieline.png,./img/retail_box_packaging/10mg-(145x60x60mm)-10mg-Template-01.png">
                         <img src="./img/retail_box_packaging/dieline.png" alt="Retail Box" class="img-fluid">
+                        <div class="portfolio-overlay">Click to see more</div>
                         <div class="p-3 bg-white">
                             <h5>Retail Box Packaging</h5>
                             <p class="mb-2">Structural dieline + 3D mockup</p>
@@ -158,7 +163,8 @@
                 <!-- Additional Projects (3D Animation) -->
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item" >
-                        <img src="./img/tech_product/0001.png" alt="3D Electronics" class="img-fluid thumbnail" data-video-src="./img/tech_product/3D Modelling.mp4">
+                        <img src="./img/tech_product/0001.png" alt="3D Electronics" class="img-fluid thumbnail" data-video-src="./img/tech_product/3D Modelling.mp4,./img/tech_product/iphone.mp4">
+                        <div class="portfolio-overlay">Click to see more</div>
                         <div class="p-3 bg-white">
                             <h5>Tech Product Render Animation</h5>
                             <p class="mb-2">Blender + Adobe After Effects</p>
@@ -167,8 +173,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item" data-images="./img/premium_wine_label/Premium_wine_label.png,./img/premium_wine_label/wine.png">
+                    <div class="portfolio-item" data-images="./img/premium_wine_label/Premium_wine_label.png,./img/premium_wine_label/Wine.png">
                         <img src="./img/premium_wine_label/Premium_wine_label.png" alt="Wine Label" class="img-fluid">
+                        <div class="portfolio-overlay">Click to see more</div>
                         <div class="p-3 bg-white">
                             <h5>Premium Wine Label</h5>
                             <p class="mb-2">Foil stamping + embossing</p>
@@ -179,6 +186,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item" data-images="./img/food_packaging/PizzaBox Mockup.png,./img/food_packaging/Food Takeout.png">
                         <img src="./img/food_packaging/PizzaBox Mockup.png" alt="3D Food Packaging" class="img-fluid">
+                        <div class="portfolio-overlay">Click to see more</div>
                         <div class="p-3 bg-white">
                             <h5>Food Packaging Mockup</h5>
                             <p class="mb-2">Blender + Realistic Materials</p>
@@ -186,6 +194,20 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item" data-images="./img/social media/capsule.png,./img/social media/mic.jpg,./img/social media/Product Banner.png">
+                        <img src="./img/social media/capsule.png" alt="social media post" class="img-fluid">
+                        <div class="portfolio-overlay">Click to see more</div>
+                        <div class="p-3 bg-white">
+                            <h5>Social Media Post</h5>
+                            <p class="mb-2">Graphic post for social media audience</p>
+                            <span class="badge bg-primary">Graphic Design</span>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -196,6 +218,10 @@
                 Your browser does not support the video tag.
             </video>
             <button class="close-btn">&times;</button>
+            <div class="video-navigation">
+                <button class="nav-btn video-prev-btn"><i class="bi bi-caret-left-fill"></i></button>
+                <button class="nav-btn video-next-btn"><i class="bi bi-caret-right-fill"></i></button>
+            </div>
         </div>
     </div>
 
@@ -397,57 +423,170 @@
     
     <script>
     $(document).ready(function() {
-        // Image Popup Functionality
-        $('.portfolio-item').click(function() {
-            const images = $(this).data('images').split(',');
-            const popup = $('.image-popup');
-            const popupImage = popup.find('.popup-image');
-            const prevBtn = popup.find('.prev-btn');
-            const nextBtn = popup.find('.next-btn');
-            let currentImageIndex = 0;
+        // --- Image Popup Gallery ---
+        let currentImageIndex = 0;
+        let images = [];
 
-            // Function to display image
-            function displayImage(index) {
-                popupImage.attr('src', images[index]);
-            }
-
-            // Initial display
-            displayImage(currentImageIndex);
-
-            // Navigation buttons
-            prevBtn.click(function() {
+        // Navigation and close handlers (bind once)
+        $('.prev-btn').click(function(e) {
+            e.stopPropagation();
+            if (images.length > 0) {
                 currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-                displayImage(currentImageIndex);
-            });
-
-            nextBtn.click(function() {
-                currentImageIndex = (currentImageIndex + 1) % images.length;
-                displayImage(currentImageIndex);
-            });
-
-            // Close button
-            popup.find('.popup-close-btn').click(function() {
-                popup.removeClass('active');
-            });
-
-            // Show popup
-            popup.addClass('active');
+                $('.popup-image').attr('src', images[currentImageIndex]);
+            }
         });
-
-        // Close when clicking outside image
+        $('.next-btn').click(function(e) {
+            e.stopPropagation();
+            if (images.length > 0) {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                $('.popup-image').attr('src', images[currentImageIndex]);
+            }
+        });
+        $('.popup-close-btn').click(function(e) {
+            e.stopPropagation();
+            $('.image-popup').removeClass('active');
+        });
         $('.image-popup').click(function(e) {
             if ($(e.target).hasClass('image-popup')) {
                 $(this).removeClass('active');
             }
         });
-
-        // Handle escape key press
         $(document).keyup(function(e) {
             if (e.key === "Escape") {
                 $('.image-popup').removeClass('active');
+                $('.video-popup').removeClass('active');
+                $('.video-popup video')[0].pause();
+                $('.video-popup video')[0].currentTime = 0;
+            }
+        });
+
+        // --- Video Popup ---
+        $('.close-btn').click(function() {
+            const popup = $('.video-popup');
+            const video = popup.find('video')[0];
+            video.pause();
+            video.currentTime = 0;
+            popup.removeClass('active');
+        });
+        $('.video-popup').click(function(e) {
+            if ($(e.target).hasClass('video-popup')) {
+                $(this).removeClass('active');
+                const video = $(this).find('video')[0];
+                video.pause();
+                video.currentTime = 0;
+            }
+        });
+
+        // --- Portfolio Item Click Handler ---
+        $('.portfolio-item').click(function(e) {
+            e.stopPropagation();
+            const $img = $(this).find('img');
+            const videoSrc = $img.data('video-src');
+            const imagesData = $(this).data('images');
+
+            if (videoSrc) {
+                // Video popup
+                const popup = $('.video-popup');
+                const video = popup.find('video');
+                video.attr('src', videoSrc.split(',')[0]); // Use first video
+                video[0].load();
+                popup.addClass('active');
+                video[0].play().catch(() => {});
+            } else if (imagesData) {
+                // Image popup
+                images = imagesData.split(',');
+                currentImageIndex = 0;
+                $('.popup-image').attr('src', images[currentImageIndex]);
+                $('.image-popup').addClass('active');
             }
         });
     });
-</script>
+    </script>
+    <script>
+    $(document).ready(function() {
+        // --- Video Popup with Multiple Videos ---
+        let videoSources = [];
+        let currentVideoIndex = 0;
+
+        $('.portfolio-item').click(function(e) {
+            e.stopPropagation();
+            const $img = $(this).find('img');
+            const videoSrc = $img.data('video-src');
+            const imagesData = $(this).data('images');
+
+            if (videoSrc) {
+                // Video popup
+                videoSources = videoSrc.split(',');
+                currentVideoIndex = 0;
+                const popup = $('.video-popup');
+                const video = popup.find('video');
+                video.attr('src', videoSources[currentVideoIndex]);
+                video[0].load();
+                popup.addClass('active');
+                video[0].play().catch(() => {});
+            } else if (imagesData) {
+                // Image popup
+                images = imagesData.split(',');
+                currentImageIndex = 0;
+                $('.popup-image').attr('src', images[currentImageIndex]);
+                $('.image-popup').addClass('active');
+            }
+        });
+
+        $('.video-prev-btn').click(function(e) {
+            e.stopPropagation();
+            if (videoSources.length > 0) {
+                currentVideoIndex = (currentVideoIndex - 1 + videoSources.length) % videoSources.length;
+                const video = $('.video-popup').find('video')[0];
+                video.src = videoSources[currentVideoIndex];
+                video.load();
+                video.play().catch(() => {});
+            }
+        });
+
+        $('.video-next-btn').click(function(e) {
+            e.stopPropagation();
+            if (videoSources.length > 0) {
+                currentVideoIndex = (currentVideoIndex + 1) % videoSources.length;
+                const video = $('.video-popup').find('video')[0];
+                video.src = videoSources[currentVideoIndex];
+                video.load();
+                video.play().catch(() => {});
+            }
+        });
+
+        // Close button click
+        $('.close-btn').click(function() {
+            const popup = $('.video-popup');
+            const video = popup.find('video')[0];
+            
+            // Pause video
+            video.pause();
+            video.currentTime = 0;
+            
+            // Hide popup
+            popup.removeClass('active');
+        });
+        
+        // Close when clicking outside video (optional)
+        $('.video-popup').click(function(e) {
+            if ($(e.target).hasClass('video-popup')) {
+                $(this).removeClass('active');
+                const video = $(this).find('video')[0];
+                video.pause();
+                video.currentTime = 0;
+            }
+        });
+        
+        // Handle escape key press
+        $(document).keyup(function(e) {
+            if (e.key === "Escape") {
+                $('.video-popup').removeClass('active');
+                $('.video-popup video')[0].pause();
+                $('.video-popup video')[0].currentTime = 0;
+            }
+        });
+    });
+    </script>
 </body>
 </html>
