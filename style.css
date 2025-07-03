@@ -26,6 +26,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .portfolio-item {
+            position: relative;
             overflow: hidden;
             border-radius: 10px;
             transition: all 0.3s;
@@ -34,6 +35,24 @@
         .portfolio-item:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .portfolio-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            font-size: 1.25rem;
+            font-weight: 500;
+            transition: opacity 0.3s;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
         }
         .btn-primary {
             background-color: var(--primary-color);
@@ -170,13 +189,14 @@
             border: none;
             padding: 5px 10px;
         }
-
+        /* Image Nav style */
         .image-navigation {
             position: absolute;
             bottom: 10px;
             left: 0;
             width: 100%;
             text-align: center;
+            background: linear-gradient(0deg, hsl(210deg 11% 15% / 50%), hsl(0deg 0% 0% / 20%) 100%);
         }
 
         .nav-btn {
@@ -200,7 +220,6 @@
                 font-size: 25px;
             }
         }
-       
 
          /* Mobile overlay styles */
     @media (max-width: 767.98px) {
@@ -241,4 +260,5 @@
             z-index: 1;
         }
     }
-  
+
+
